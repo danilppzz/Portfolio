@@ -1,4 +1,3 @@
-<!-- TuComponente.svelte -->
 <script>
   import IconArchive from "../components/icons/IconArchive.svelte";
   import IconCase from "../components/icons/IconCase.svelte";
@@ -9,12 +8,15 @@
   import IconShare from "../components/icons/IconShare.svelte";
   import IconStar from "../components/icons/IconStar.svelte";
   import IconTick from "../components/icons/IconTick.svelte";
+  import IconGithub from "../components/icons/IconGithub.svelte"
+  import IconCv from "../components/icons/IconCv.svelte"
+  import IconDev from "../components/icons/IconDev.svelte"
   // Exporta los props "title" e "icon"
   export let title = "";
   export let icon = 0;
 
   // Define un array de componentes para utilizarlos como íconos
-  const icons = ["", IconArchive, IconCase, IconCross, IconMail, IconPin, IconPower, IconShare, IconStar, IconTick];
+  const icons = ["", IconArchive, IconCase, IconCross, IconMail, IconPin, IconPower, IconShare, IconStar, IconTick, IconGithub, IconCv, IconDev];
 </script>
 
 <section class="max-w-3xl mx-auto mt-14">
