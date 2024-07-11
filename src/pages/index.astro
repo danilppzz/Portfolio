@@ -13,6 +13,7 @@ import Content from "../components/Content.svelte";
 import Badge from "../components/Badge.svelte";
 import Button from "../components/Button.svelte";
 import Slider from "../components/Slider.astro";
+import IconStar from "../components/icons/IconStar.svelte";
 ---
 
 <Layout title="danilppzz">
@@ -55,12 +56,57 @@ import Slider from "../components/Slider.astro";
     </Section>
 
     <Section title="Projects" icon={12}>
-      <Content />
+      <div class="grid grid-cols-3 gap-4">
+        <div class="w-full">
+          <Content>
+            <img class="w-full rounded-t-md" src="/code.png" />
+            <div class="bg-white h-[1px] bg-opacity-5 w-full mb-1"></div>
+            <div class="p-3">
+              <div class="flex mb-2 items-center gap-2">
+                <h1 class="font-bold text-[20px] text-white">CryptorJS</h1>
+              </div>
+              <p class="text-pretty text-white opacity-80">
+                The cryptor library is a tool for securely hashing and comparing passwords in
+                Node.js.
+              </p>
+              <div class="flex items-end mt-4 gap-2">
+                <a href="https://github.com/danilppzz/Cryptor" target="_blank"
+                  ><Button variant="icon"><IconGithub /></Button></a
+                >
+              </div>
+            </div>
+          </Content>
+        </div>
+        <div class="w-full">
+          <Content>
+            <img class="w-full rounded-t-md" src="/code.png" />
+            <div class="bg-white h-[1px] bg-opacity-5 w-full mb-1"></div>
+            <div class="p-3">
+              <div class="flex mb-2 items-center gap-2">
+                <h1 class="font-bold text-[20px] text-white">Node Badge API</h1>
+              </div>
+              <p class="text-pretty text-white opacity-80">
+                This badge api build svg with custom text, color and border to show it in your webs
+                or other sites.
+              </p>
+              <div class="flex items-end mt-4 gap-2">
+                <a href="https://github.com/danilppzz/Node-Badge-API" target="_blank"
+                  ><Button variant="icon"><IconGithub /></Button></a
+                >
+              </div>
+            </div>
+          </Content>
+        </div>
+        <div class="w-full">
+          <Content />
+        </div>
+      </div>
     </Section>
 
     <!-- https://skillicons.dev/icons?i=html,css,git,ts,tailwind,nodejs,go,cpp,vscode -->
     <Section title="Technologies" icon={6}>
-      <Slider></Slider>
+      <Slider />
     </Section>
+    <div class="flex py-[60px] justify-center items-center">Made by danilpzz</div>
   </main>
 </Layout>
