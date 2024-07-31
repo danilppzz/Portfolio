@@ -19,7 +19,7 @@
   const icons = ["", IconArchive, IconCase, IconCross, IconMail, IconPin, IconPower, IconShare, IconStar, IconTick, IconGithub, IconCv, IconDev];
 </script>
 
-<section class="max-w-3xl mx-auto mt-14">
+<section class="max-w-3xl mx-auto mt-14 transition-opacity">
   <div class="flex items-center mb-4">
     {#if icon >= 0 && icon < icons.length}
       <svelte:component this={icons[icon]} class="mr-2 w-6 h-6" />

@@ -52,14 +52,16 @@ import IconStar from "../components/icons/IconStar.svelte";
     </Section>
 
     <Section title="Experience" icon={2}>
-      <Content />
+      <Content>
+        <div class="h-[120px]"></div>
+      </Content>
     </Section>
 
     <Section title="Projects" icon={12}>
       <div class="grid grid-cols-3 gap-4">
         <div class="w-full">
           <Content>
-            <img class="w-full rounded-t-md" src="/code.png" alt="code" />
+            <img class="w-full rounded-t-md" src="/code3.png" alt="code" />
             <div class="bg-white h-[1px] bg-opacity-5 w-full mb-1"></div>
             <div class="p-3">
               <div class="flex mb-2 items-center gap-2">
@@ -79,22 +81,18 @@ import IconStar from "../components/icons/IconStar.svelte";
         </div>
         <div class="w-full">
           <Content>
-            <img class="w-full rounded-t-md" src="/code.png" alt="code" />
+            <img class="w-full rounded-t-md" src="/code2.png" alt="code" />
             <div class="bg-white h-[1px] bg-opacity-5 w-full mb-1"></div>
             <div class="p-3">
               <div class="flex mb-2 items-center gap-2">
-                <h1 class="font-bold text-[20px] text-white">Node Badge API</h1>
+                <h1 class="font-bold text-[20px] text-white">Tekit UI</h1>
               </div>
               <p class="text-pretty text-white opacity-60">
-                This badge api build svg with custom text, color and border to show it in your webs
-                or other sites.
+                React (TypeScript) & tailwind component library that works importing by command.
               </p>
               <div class="flex items-end mt-4 gap-2">
-                <a href="https://github.com/danilppzz/Node-Badge-API" target="_blank"
+                <a href="https://github.com/danilppzz/Tekit-UI-CLI" target="_blank"
                   ><Button variant="icon"><IconGithub /></Button></a
-                >
-                <a href="https://hono-badge-api.vercel.app/" target="_blank"
-                  ><Button variant="text">Live view</Button></a
                 >
               </div>
             </div>
